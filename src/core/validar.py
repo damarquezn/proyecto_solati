@@ -10,12 +10,9 @@ def validar_nomenclatura(archivo):
         return False
     
     id_casa, identificacion_deudor, telefono, timestamp = partes
-
-    if len(telefono) != 10:
-        return False
     
-    # Validar que timestamp sea numérico y tenga al menos 10 dígitos (Unix timestamp)
-    if not timestamp.isdigit() or len(timestamp) < 10:
+    # Validar que timestamp sea numérico y tenga al menos 8 dígitos
+    if not timestamp.isdigit() or len(timestamp) < 8:
         return False
     
     # Validar que identificación y teléfono sean numéricos
