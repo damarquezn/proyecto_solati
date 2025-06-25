@@ -49,10 +49,10 @@ soportados (WAV, MP3, AAC, OGG) y rechazar archivos con formatos no válidos, ge
 logs de error correspondientes. 
 RF-004: Control de Convenciones de Nomenclatura por Casa de Cobranza 
 El sistema debe verificar que los nombres de archivo sigan la convención establecida: 
-id_casa_cobranza-timestamp_epoch.extension (ejemplo: 
-casa_001-1717200000.wav), donde timestamp_epoch representa la fecha y hora de la 
+id_casa_cobranza-identificaciondeudor-telefono-timestamp_epoch.extension (ejemplo: 
+casa_001-123456789-300000000-1717200000.wav), donde timestamp_epoch representa la fecha y hora de la 
 grabación en formato Unix timestamp, y el identificador de casa de cobranza permita rastrear 
-inequívocamente el origen de cada grabación. 
+inequívocamente el origen de cada grabación, identificación representa el número de identificaón del deudor al que se le hizo la llamada, y el número de telefono del deudor al que se le realizó la llamada.  
 3.2 Procesamiento y Clasificación 
 RF-005: Extracción de Metadatos con Identificación de Origen 
 El proceso de clasificación debe extraer metadatos relevantes de cada archivo, incluyendo 
