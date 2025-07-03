@@ -14,11 +14,13 @@ def main():
     parser.add_argument('--listar-buckets', action='store_true', help='Listar buckets disponibles')
     parser.add_argument('--listar-objetos', action='store_true', help='Listar objetos en el bucket')
     parser.add_argument('--borrar', type=str, help='Borrar un archivo específico de S3 (especifica la clave del objeto)')
+    parser.add_argument('--borrar-multiples', nargs='+', help='Borrar múltiples archivos de S3 (lista de claves)')
     parser.add_argument('--bucket', type=str, default=DEFAULT_BUCKET, help='Nombre del bucket S3')
+    parser.add_argument('--ruta', type=str, required=True, help='Ruta local del SFTP (por defecto: %(default)s)')
     args = parser.parse_args()
     
     # Si no se especifica ninguna acción, mostrar mensaje de ayuda
-    if not (args.subir_todo or args.subir_carpeta or args.subir_archivo or args.listar_buckets or args.listar_objetos or args.borrar):
+    if not (args.subir_todo or args.subir_carpeta or args.subir_archivo or args.listar_buckets or args.listar_objetos or args.borrar or args.borrar_multiples):
         print("\nNinguna acción especificada. Opciones disponibles:")
         print(f"Bucket por defecto: {DEFAULT_BUCKET}")
         print("Ejemplos:")
@@ -26,7 +28,8 @@ def main():
         print("  python src/main.py --subir-carpeta mi_carpeta")
         print("  python src/main.py --subir-archivo carpeta/archivo.mp3")
         print("  python src/main.py --listar-objetos")
-        print("  python src/main.py --borrar carpeta/archivo.mp3\n")
+        print("  python src/main.py --borrar carpeta/archivo.mp3")
+        print("  python src/main.py --borrar-multiples carpeta/archivo1.mp3 carpeta/archivo2.wav\n")
         parser.print_help()
     
     if args.listar_buckets:
@@ -55,9 +58,25 @@ def main():
             print(f"\n✗ Error al eliminar archivo: {resultado['mensaje']}")
         return
     
+    if args.borrar_multiples:
+        print(f"\nEliminando {len(args.borrar_multiples)} archivos del bucket '{args.bucket}'...")
+        resultados = borrar_multiples_archivos_s3(args.bucket, args.borrar_multiples)
+        
+        exitosos = sum(1 for r in resultados if r['estado'] == 'eliminado')
+        errores = len(resultados) - exitosos
+        
+        print(f"\nResultados:")
+        print(f"✓ {exitosos} archivos eliminados exitosamente")
+        if errores > 0:
+            print(f"✗ {errores} archivos con errores")
+            for resultado in resultados:
+                if resultado['estado'] == 'error':
+                    print(f"  - {resultado['archivo']}: {resultado['mensaje']}")
+        return
+    
     if args.subir_archivo:
         import os
-        ruta_archivo = os.path.join(RUTA_SFTP, args.subir_archivo)
+        ruta_archivo = os.path.join(args.ruta, args.subir_archivo)
         print(f"\nSubiendo archivo individual: {args.subir_archivo}")
         resultado = subir_archivo_individual(ruta_archivo, args.bucket)
         if resultado['estado'] == 'subido':
@@ -81,7 +100,7 @@ def main():
         return
     
     if args.subir_todo:
-        audios_por_carpeta = recorrer_archivos(RUTA_SFTP)
+        audios_por_carpeta = recorrer_archivos(args.ruta)
         imprimir_resumen_audios(audios_por_carpeta)
         
         print(f"\nSubiendo todas las carpetas a S3 (bucket: {args.bucket})...")
@@ -102,7 +121,7 @@ def main():
         return
     
     # Si no hay acción de subida, solo mostrar resumen
-    audios_por_carpeta = recorrer_archivos(RUTA_SFTP)
+    audios_por_carpeta = recorrer_archivos(args.ruta)
     imprimir_resumen_audios(audios_por_carpeta)
 
 if __name__ == "__main__":
