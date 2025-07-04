@@ -18,6 +18,9 @@ def main():
     parser.add_argument('--bucket', type=str, default=DEFAULT_BUCKET, help='Nombre del bucket S3')
     parser.add_argument('--ruta', type=str, required=True, help='Ruta local del SFTP (por defecto: %(default)s)')
     args = parser.parse_args()
+    import os
+    args.ruta = os.path.abspath(args.ruta)
+
     
     # Si no se especifica ninguna acción, mostrar mensaje de ayuda
     if not (args.subir_todo or args.subir_carpeta or args.subir_archivo or args.listar_buckets or args.listar_objetos or args.borrar or args.borrar_multiples):
@@ -105,7 +108,7 @@ def main():
         
         print(f"\nSubiendo todas las carpetas a S3 (bucket: {args.bucket})...")
         print("Este proceso puede tardar dependiendo del tamaño y cantidad de archivos.")
-        resultados = subir_todas_las_carpetas(args.bucket)
+        resultados = subir_todas_las_carpetas(ruta_sftp= args.ruta ,bucket_name=args.bucket)
         
         print("\nResultados de la subida a S3:")
         for carpeta, resultado in resultados.items():

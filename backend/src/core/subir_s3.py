@@ -32,10 +32,11 @@ def subir_archivo_individual(archivo_path, bucket_name, s3_key=None):
         print(f"✗ Error al subir {s3_key}: {error_msg}")
         return {"estado": "error", "mensaje": error_msg}
 
-def subir_carpeta_especifica(nombre_carpeta, bucket_name):
+
+def subir_carpeta_especifica(nombre_carpeta, bucket_name, ruta_sftp=RUTA_SFTP):
     """Sube todos los archivos de una carpeta específica"""
     cliente = S3ApiClient(API_BASE_URL, API_KEY)
-    ruta_carpeta = os.path.join(RUTA_SFTP, nombre_carpeta)
+    ruta_carpeta = os.path.join(ruta_sftp, nombre_carpeta)
     
     if not os.path.exists(ruta_carpeta):
         return {"estado": "error", "mensaje": "Carpeta no encontrada"}
@@ -76,28 +77,30 @@ def subir_carpeta_especifica(nombre_carpeta, bucket_name):
     
     return {"carpeta": nombre_carpeta, "archivos": resultados}
 
-def subir_todas_las_carpetas(bucket_name):
-    """Sube todos los archivos de todas las carpetas en RUTA_SFTP"""
-    if not os.path.exists(RUTA_SFTP):
+
+def subir_todas_las_carpetas(ruta_sftp=RUTA_SFTP, bucket_name=None):
+    """Sube todos los archivos de todas las carpetas en ruta_sftp"""
+    if not os.path.exists(ruta_sftp):
         return {"estado": "error", "mensaje": "Ruta SFTP no encontrada"}
     
     resultados = {}
-    carpetas = [d for d in os.listdir(RUTA_SFTP) if os.path.isdir(os.path.join(RUTA_SFTP, d))]
+    carpetas = [d for d in os.listdir(ruta_sftp) if os.path.isdir(os.path.join(ruta_sftp, d))]
     
     for carpeta in carpetas:
         print(f"Procesando carpeta: {carpeta}")
-        resultado_carpeta = subir_carpeta_especifica(carpeta, bucket_name)
+        resultado_carpeta = subir_carpeta_especifica(carpeta, bucket_name, ruta_sftp=ruta_sftp)
         resultados[carpeta] = resultado_carpeta
     
     return resultados
 
-def subir_audios_a_s3(diccionario_audios, bucket_name):
+
+def subir_audios_a_s3(diccionario_audios, bucket_name, ruta_sftp=RUTA_SFTP):
     """Sube archivos específicos organizados por carpeta (reutiliza lógica existente)"""
     resultados = {}
     
     for nombre_carpeta in diccionario_audios.keys():
         print(f"Procesando carpeta: {nombre_carpeta}")
-        resultado_carpeta = subir_carpeta_especifica(nombre_carpeta, bucket_name)
+        resultado_carpeta = subir_carpeta_especifica(nombre_carpeta, bucket_name, ruta_sftp=ruta_sftp)
         resultados[nombre_carpeta] = resultado_carpeta.get("archivos", [])
     
     return resultados
