@@ -9,9 +9,7 @@ import argparse
 import os
 
 def main():
-    logger = setup_logger()
-    logger.info("Iniciando aplicación de gestión de audios")
-    
+    # Configuración inicial de argumentos para obtener la ruta
     parser = argparse.ArgumentParser(description='Gestión de archivos de audio')
     parser.add_argument('--subir-todo', action='store_true', help='Subir todas las carpetas a S3')
     parser.add_argument('--subir-carpeta', type=str, help='Subir una carpeta específica a S3')
@@ -24,8 +22,23 @@ def main():
     parser.add_argument('--bucket', type=str, default=DEFAULT_BUCKET, help='Nombre del bucket S3')
     parser.add_argument('--ruta', type=str, required=True, help='Ruta local del SFTP (por defecto: %(default)s)')
     args = parser.parse_args()
+    
+    # Convertir ruta a absoluta para evitar problemas de directorio
     args.ruta = os.path.abspath(args.ruta)
+    
+    # Validar que la ruta existe antes de configurar logging
+    if not os.path.exists(args.ruta):
+        print(f"Error: La ruta especificada no existe: {args.ruta}")
+        return
+    
+    # Detectar nombre del cliente desde la ruta
+    cliente_name = os.path.basename(args.ruta)
+    
+    # Configurar logger específico para el cliente
+    logger = setup_logger(cliente_name)
+    logger.info("Iniciando aplicación de gestión de audios")
     logger.info(f"Ruta de trabajo: {args.ruta}")
+    logger.info(f"Cliente detectado: {cliente_name}")
 
     
     if not (args.subir_todo or args.subir_carpeta or args.subir_archivo or args.listar_buckets or args.listar_objetos or args.borrar or args.borrar_multiples or args.borrar_todo):

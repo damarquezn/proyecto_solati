@@ -1,0 +1,10 @@
+2025-07-07 19:20:05,309 - INFO - core.logger - Logger configurado para cliente: cliente8
+2025-07-07 19:20:05,309 - INFO - core.logger - Archivo de log: /home/danmarna/nuevo_proyecto/proyecto_solati/backend/logs/cliente8/app_20250707.log
+2025-07-07 19:20:05,309 - INFO - core.logger - Iniciando aplicación de gestión de audios
+2025-07-07 19:20:05,309 - INFO - core.logger - Ruta de trabajo: /home/danmarna/nuevo_proyecto/proyecto_solati/cliente8
+2025-07-07 19:20:05,310 - INFO - core.logger - Cliente detectado: cliente8
+2025-07-07 19:20:05,310 - WARNING - core.logger - Solicitud de vaciado completo del bucket: tests-devops
+2025-07-07 19:20:10,532 - INFO - core.logger - Iniciando vaciado completo del bucket: tests-devops
+2025-07-07 19:20:10,533 - INFO - core.borrar_s3 - Iniciando vaciado completo del bucket: tests-devops
+2025-07-07 19:20:10,880 - INFO - core.borrar_s3 - Bucket tests-devops ya está vacío
+2025-07-07 19:20:10,880 - INFO - core.logger - Bucket tests-devops ya estaba vacío

@@ -1,0 +1,146 @@
+2025-07-07 19:19:05,992 - INFO - core.logger - Logger configurado para cliente: cliente9
+2025-07-07 19:19:05,992 - INFO - core.logger - Archivo de log: /home/danmarna/nuevo_proyecto/proyecto_solati/backend/logs/cliente9/app_20250707.log
+2025-07-07 19:19:05,992 - INFO - core.logger - Iniciando aplicación de gestión de audios
+2025-07-07 19:19:05,992 - INFO - core.logger - Ruta de trabajo: /home/danmarna/nuevo_proyecto/proyecto_solati/cliente9
+2025-07-07 19:19:05,992 - INFO - core.logger - Cliente detectado: cliente9
+2025-07-07 19:19:05,992 - WARNING - core.logger - Solicitud de vaciado completo del bucket: tests-devops
+2025-07-07 19:19:09,620 - INFO - core.logger - Iniciando vaciado completo del bucket: tests-devops
+2025-07-07 19:19:09,620 - INFO - core.borrar_s3 - Iniciando vaciado completo del bucket: tests-devops
+2025-07-07 19:19:09,955 - INFO - core.borrar_s3 - Se encontraron 30 objetos para eliminar
+2025-07-07 19:19:09,955 - INFO - core.borrar_s3 - Eliminando 30 archivos del bucket: tests-devops
+2025-07-07 19:19:09,955 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-100984245-3004845839-1700460000.mp3 del bucket: tests-devops
+2025-07-07 19:19:10,145 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-100984245-3004845839-1700460000.mp3
+2025-07-07 19:19:10,145 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-123498759-3004050023-1700580048.mp3 del bucket: tests-devops
+2025-07-07 19:19:10,311 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-123498759-3004050023-1700580048.mp3
+2025-07-07 19:19:10,311 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-123840839-3004820398-1705084500.mp3 del bucket: tests-devops
+2025-07-07 19:19:10,491 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-123840839-3004820398-1705084500.mp3
+2025-07-07 19:19:10,492 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-129475893-3118573908-1700507900.mp3 del bucket: tests-devops
+2025-07-07 19:19:10,676 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-129475893-3118573908-1700507900.mp3
+2025-07-07 19:19:10,676 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-93473892-3001852498-1700509000.mp3 del bucket: tests-devops
+2025-07-07 19:19:10,847 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-93473892-3001852498-1700509000.mp3
+2025-07-07 19:19:10,847 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-94323948-3004298850-1700659000.mp3 del bucket: tests-devops
+2025-07-07 19:19:11,013 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-94323948-3004298850-1700659000.mp3
+2025-07-07 19:19:11,013 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-94839480-3004918394-1700487090.mp3 del bucket: tests-devops
+2025-07-07 19:19:11,207 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-94839480-3004918394-1700487090.mp3
+2025-07-07 19:19:11,207 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-94853123-3009895948-1740507000.mp3 del bucket: tests-devops
+2025-07-07 19:19:11,496 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-94853123-3009895948-1740507000.mp3
+2025-07-07 19:19:11,496 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-7/andesbpo-987642654-3167368776-1740477300.mp3 del bucket: tests-devops
+2025-07-07 19:19:11,659 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-7/andesbpo-987642654-3167368776-1740477300.mp3
+2025-07-07 19:19:11,660 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-1008397492-3108405804-1700495080.mp3 del bucket: tests-devops
+2025-07-07 19:19:11,826 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-1008397492-3108405804-1700495080.mp3
+2025-07-07 19:19:11,826 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-1008904850-3001884920-17040608790.mp3 del bucket: tests-devops
+2025-07-07 19:19:11,992 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-1008904850-3001884920-17040608790.mp3
+2025-07-07 19:19:11,992 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-10089842039-3004894850-1705084909.mp3 del bucket: tests-devops
+2025-07-07 19:19:12,152 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-10089842039-3004894850-1705084909.mp3
+2025-07-07 19:19:12,152 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-1008984759-3204750948-17009847508.mp3 del bucket: tests-devops
+2025-07-07 19:19:12,317 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-1008984759-3204750948-17009847508.mp3
+2025-07-07 19:19:12,318 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-1009847293-3004875940-1740687904.mp3 del bucket: tests-devops
+2025-07-07 19:19:12,485 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-1009847293-3004875940-1740687904.mp3
+2025-07-07 19:19:12,486 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-1234895080-3004875909-1700898750.mp3 del bucket: tests-devops
+2025-07-07 19:19:12,649 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-1234895080-3004875909-1700898750.mp3
+2025-07-07 19:19:12,649 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-349857087-3104908509-1700897659.mp3 del bucket: tests-devops
+2025-07-07 19:19:12,831 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-349857087-3104908509-1700897659.mp3
+2025-07-07 19:19:12,832 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-394827394-3129394750-1720405874.mp3 del bucket: tests-devops
+2025-07-07 19:19:12,999 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-394827394-3129394750-1720405874.mp3
+2025-07-07 19:19:12,999 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-41738947-3167389996-1700587289.mp3 del bucket: tests-devops
+2025-07-07 19:19:13,164 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-41738947-3167389996-1700587289.mp3
+2025-07-07 19:19:13,165 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-418475908-3175690875-17008957038.mp3 del bucket: tests-devops
+2025-07-07 19:19:13,375 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-418475908-3175690875-17008957038.mp3
+2025-07-07 19:19:13,375 - INFO - core.borrar_s3 - Eliminando archivo: contento-7/contento-41947594-3108504875-17008987658.mp3 del bucket: tests-devops
+2025-07-07 19:19:13,548 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-7/contento-41947594-3108504875-17008987658.mp3
+2025-07-07 19:19:13,548 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-1007894194-3168976590-1717200000.mp3 del bucket: tests-devops
+2025-07-07 19:19:13,725 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-1007894194-3168976590-1717200000.mp3
+2025-07-07 19:19:13,726 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-1009283048-3203948995-1700948000.mp3 del bucket: tests-devops
+2025-07-07 19:19:13,899 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-1009283048-3203948995-1700948000.mp3
+2025-07-07 19:19:13,899 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-10092837499-3100928394-1730496000.mp3 del bucket: tests-devops
+2025-07-07 19:19:14,062 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-10092837499-3100928394-1730496000.mp3
+2025-07-07 19:19:14,062 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-1034829405-3179283749-17009384750.mp3 del bucket: tests-devops
+2025-07-07 19:19:14,228 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-1034829405-3179283749-17009384750.mp3
+2025-07-07 19:19:14,229 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-1084938494-3004864758-1750370000.mp3 del bucket: tests-devops
+2025-07-07 19:19:14,638 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-1084938494-3004864758-1750370000.mp3
+2025-07-07 19:19:14,638 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-121304954-3187849204-1750377600.mp3 del bucket: tests-devops
+2025-07-07 19:19:14,807 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-121304954-3187849204-1750377600.mp3
+2025-07-07 19:19:14,807 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-1329458203-3203948502-1734005049.mp3 del bucket: tests-devops
+2025-07-07 19:19:14,968 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-1329458203-3203948502-1734005049.mp3
+2025-07-07 19:19:14,968 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-3929482304-3004928304-173009484305.mp3 del bucket: tests-devops
+2025-07-07 19:19:15,135 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-3929482304-3004928304-173009484305.mp3
+2025-07-07 19:19:15,136 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-3949284023-3009283940-170094858038.mp3 del bucket: tests-devops
+2025-07-07 19:19:15,314 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-3949284023-3009283940-170094858038.mp3
+2025-07-07 19:19:15,314 - INFO - core.borrar_s3 - Eliminando archivo: konecta-7/konecta-3998948203-3291830482-1700394875.mp3 del bucket: tests-devops
+2025-07-07 19:19:15,474 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-7/konecta-3998948203-3291830482-1700394875.mp3
+2025-07-07 19:19:15,475 - INFO - core.borrar_s3 - Eliminación múltiple completada: 30 exitosos, 0 errores
+2025-07-07 19:19:15,475 - INFO - core.borrar_s3 - Vaciado completado: 30 eliminados, 0 errores
+2025-07-07 19:19:15,475 - INFO - core.logger - Vaciado completado: 30 eliminados, 0 errores
+2025-07-07 19:25:55,075 - INFO - core.logger - Logger configurado para cliente: cliente9
+2025-07-07 19:25:55,076 - INFO - core.logger - Archivo de log: /home/danmarna/nuevo_proyecto/proyecto_solati/backend/logs/cliente9/app_20250707.log
+2025-07-07 19:25:55,076 - INFO - core.logger - Iniciando aplicación de gestión de audios
+2025-07-07 19:25:55,076 - INFO - core.logger - Ruta de trabajo: /home/danmarna/nuevo_proyecto/proyecto_solati/cliente9
+2025-07-07 19:25:55,076 - INFO - core.logger - Cliente detectado: cliente9
+2025-07-07 19:25:55,076 - WARNING - core.logger - Solicitud de vaciado completo del bucket: cliente9.adminfo.test
+2025-07-07 19:25:57,033 - INFO - core.logger - Iniciando vaciado completo del bucket: cliente9.adminfo.test
+2025-07-07 19:25:57,033 - INFO - core.borrar_s3 - Iniciando vaciado completo del bucket: cliente9.adminfo.test
+2025-07-07 19:25:57,375 - INFO - core.borrar_s3 - Se encontraron 30 objetos para eliminar
+2025-07-07 19:25:57,375 - INFO - core.borrar_s3 - Eliminando 30 archivos del bucket: cliente9.adminfo.test
+2025-07-07 19:25:57,375 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-100984245-3004845839-1700460000.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:57,552 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-100984245-3004845839-1700460000.mp3
+2025-07-07 19:25:57,553 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-123498759-3004050023-1700580048.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:57,708 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-123498759-3004050023-1700580048.mp3
+2025-07-07 19:25:57,708 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-123840839-3004820398-1705084500.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:58,008 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-123840839-3004820398-1705084500.mp3
+2025-07-07 19:25:58,009 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-129475893-3118573908-1700507900.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:58,176 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-129475893-3118573908-1700507900.mp3
+2025-07-07 19:25:58,176 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-93473892-3001852498-1700509000.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:58,459 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-93473892-3001852498-1700509000.mp3
+2025-07-07 19:25:58,459 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-94323948-3004298850-1700659000.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:58,748 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-94323948-3004298850-1700659000.mp3
+2025-07-07 19:25:58,748 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-94839480-3004918394-1700487090.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:59,030 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-94839480-3004918394-1700487090.mp3
+2025-07-07 19:25:59,030 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-94853123-3009895948-1740507000.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:59,188 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-94853123-3009895948-1740507000.mp3
+2025-07-07 19:25:59,189 - INFO - core.borrar_s3 - Eliminando archivo: andesbpo-9/andesbpo-987642654-3167368776-1740477300.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:59,487 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: andesbpo-9/andesbpo-987642654-3167368776-1740477300.mp3
+2025-07-07 19:25:59,488 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-1008397492-3108405804-1700495080.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:25:59,786 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-1008397492-3108405804-1700495080.mp3
+2025-07-07 19:25:59,787 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-1008904850-3001884920-17040608790.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:00,077 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-1008904850-3001884920-17040608790.mp3
+2025-07-07 19:26:00,077 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-10089842039-3004894850-1705084909.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:00,249 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-10089842039-3004894850-1705084909.mp3
+2025-07-07 19:26:00,249 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-1008984759-3204750948-17009847508.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:00,541 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-1008984759-3204750948-17009847508.mp3
+2025-07-07 19:26:00,541 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-1009847293-3004875940-1740687904.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:00,756 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-1009847293-3004875940-1740687904.mp3
+2025-07-07 19:26:00,757 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-1234895080-3004875909-1700898750.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:00,929 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-1234895080-3004875909-1700898750.mp3
+2025-07-07 19:26:00,929 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-349857087-3104908509-1700897659.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:01,227 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-349857087-3104908509-1700897659.mp3
+2025-07-07 19:26:01,227 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-394827394-3129394750-1720405874.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:01,522 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-394827394-3129394750-1720405874.mp3
+2025-07-07 19:26:01,523 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-41738947-3167389996-1700587289.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:01,809 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-41738947-3167389996-1700587289.mp3
+2025-07-07 19:26:01,810 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-418475908-3175690875-17008957038.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:02,097 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-418475908-3175690875-17008957038.mp3
+2025-07-07 19:26:02,097 - INFO - core.borrar_s3 - Eliminando archivo: contento-9/contento-41947594-3108504875-17008987658.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:02,393 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: contento-9/contento-41947594-3108504875-17008987658.mp3
+2025-07-07 19:26:02,393 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-1007894194-3168976590-1717200000.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:02,560 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-1007894194-3168976590-1717200000.mp3
+2025-07-07 19:26:02,560 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-1009283048-3203948995-1700948000.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:02,854 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-1009283048-3203948995-1700948000.mp3
+2025-07-07 19:26:02,854 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-10092837499-3100928394-1730496000.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:03,014 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-10092837499-3100928394-1730496000.mp3
+2025-07-07 19:26:03,014 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-1034829405-3179283749-17009384750.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:03,181 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-1034829405-3179283749-17009384750.mp3
+2025-07-07 19:26:03,181 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-1084938494-3004864758-1750370000.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:03,374 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-1084938494-3004864758-1750370000.mp3
+2025-07-07 19:26:03,375 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-121304954-3187849204-1750377600.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:03,551 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-121304954-3187849204-1750377600.mp3
+2025-07-07 19:26:03,551 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-1329458203-3203948502-1734005049.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:03,849 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-1329458203-3203948502-1734005049.mp3
+2025-07-07 19:26:03,849 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-3929482304-3004928304-173009484305.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:04,153 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-3929482304-3004928304-173009484305.mp3
+2025-07-07 19:26:04,154 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-3949284023-3009283940-170094858038.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:04,321 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-3949284023-3009283940-170094858038.mp3
+2025-07-07 19:26:04,322 - INFO - core.borrar_s3 - Eliminando archivo: konecta-9/konecta-3998948203-3291830482-1700394875.mp3 del bucket: cliente9.adminfo.test
+2025-07-07 19:26:04,496 - INFO - core.borrar_s3 - Archivo eliminado exitosamente: konecta-9/konecta-3998948203-3291830482-1700394875.mp3
+2025-07-07 19:26:04,497 - INFO - core.borrar_s3 - Eliminación múltiple completada: 30 exitosos, 0 errores
+2025-07-07 19:26:04,497 - INFO - core.borrar_s3 - Vaciado completado: 30 eliminados, 0 errores
+2025-07-07 19:26:04,497 - INFO - core.logger - Vaciado completado: 30 eliminados, 0 errores
